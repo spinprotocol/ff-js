@@ -1,0 +1,31 @@
+{
+  "name": "ffjs",
+  "version": "0.0.1",
+  "description": "Spin-protocol lib based FP for ES6+",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+      "test": "mocha -R spec test/test.js",
+      "local": "node ./test/local_test.js",
+      "local_esm": "node -r esm ./test/local_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinprotocol/ffJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spinprotocol/ffJS/issues"
+  },
+  "homepage": "https://github.com/spinprotocol/ffJS#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.4"
+  }
+}
