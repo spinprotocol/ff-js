@@ -1,4 +1,4 @@
-import filterL from "./lazy/filterL";
+import filterL from "../lazy/filterL";
 import curry from "./curry";
 import takeAll from "./takeAll";
 

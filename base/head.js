@@ -1,6 +1,6 @@
 import take from "./take";
-import go1 from "./go1";
+import goFirst from "./goFirst";
 
 export default function head(iter) {
-    return go1(take(1, iter), ([h]) => h);
+    return goFirst(take(1, iter), ([h]) => h);
 }

@@ -1,8 +1,8 @@
-import rejectL from "./lazy/rejectL";
-import take1 from "./take1";
-import go1 from "./go1";
+import rejectL from "../lazy/rejectL";
+import takeFirst from "./takeFirst";
+import goFirst from "./goFirst";
 import curry from "./curry";
 
 export default curry(function every(f, iter) {
-    return go1(take1(rejectL(f, iter)), ({length}) => length == 0);
+    return goFirst(takeFirst(rejectL(f, iter)), ({length}) => length == 0);
 });

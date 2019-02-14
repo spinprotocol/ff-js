@@ -1,6 +1,6 @@
 import toIter from "./toIter.js";
 import nop from "./nop.js";
-import go1 from "./go1.js";
+import goFirst from "./goFirst.js";
 import head from "./head.js";
 
 const call2 = (acc, a, f) =>
@@ -13,7 +13,7 @@ export default function reduce(f, acc, iter) {
     if (arguments.length == 2) return reduce(f, head(iter = toIter(acc)), iter);
 
     iter = toIter(iter);
-    return go1(acc, function recur(acc) {
+    return goFirst(acc, function recur(acc) {
     let cur;
     while (!(cur = iter.next()).done) {
         acc = call2(acc, cur.value, f);

@@ -1,4 +1,4 @@
-import mapL from "./lazy/mapL";
+import mapL from "../lazy/mapL";
 import curry from "./curry";
 import takeAll from "./takeAll";
 

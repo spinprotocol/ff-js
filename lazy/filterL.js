@@ -1,5 +1,6 @@
-import go1 from '../base/go1';
+import curry from '../base/curry';
+import goFirst from '../base/goFirst';
 
-export default function *filterL(f, iter) {
-    for (const a of iter) if(go1(a, f)) yield a;
-}
+export default curry(function *filterL(f, iter) {
+    for (const a of iter) if(goFirst(a, f)) yield a;
+});

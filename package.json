@@ -7,9 +7,9 @@
     "test": "test"
   },
   "scripts": {
-      "test": "mocha -R spec test/test.js",
-      "local": "node ./test/local_test.js",
-      "local_esm": "node -r esm ./test/local_test.js"
+    "test": "mocha -R spec test/test.js",
+    "local": "node ./test/example.js",
+    "local_esm": "node -r esm ./test/example.js"
   },
   "repository": {
     "type": "git",

@@ -5,18 +5,42 @@ export { default as isPromise } from './base/isPromise';
 export { default as isArray } from './base/isArray';
 export { default as isFunction } from './base/isFunction';
 export { default as isString } from './base/isString';
-
-export { default as isString } from './base/isStop';
-export { default as isString } from './base/isUndefined';
-export { default as isString } from './base/isMatch';
-
+export { default as isUndefined } from './base/isUndefined';
+export { default as isMatch } from './base/isMatch';
 export { default as map } from './base/map';
 export { default as filter } from './base/filter';
 export { default as reduce } from './base/reduce';
-
 export { default as go } from './base/go';
-export { default as go1 } from './base/go1';
-export { default as goS } from './base/goS';
+export { default as goFirst } from './base/goFirst';
+export { default as pipe } from './base/pipe';
+export { default as take } from './base/take';
+export { default as takeFirst } from './base/takeFirst';
+export { default as takeAll } from './base/takeAll';
+export { default as tap } from './base/tap';
+export { default as none } from './base/none';
+export { default as nop } from './base/nop';
+export { default as not } from './base/not';
+export { default as toIter } from './base/toIter';
+export { default as values } from './base/values';
+export { default as match } from './base/match';
+export { default as every } from './base/every';
+export { default as find } from './base/find';
+export { default as last } from './base/last';
+export { default as call } from './base/call';
 
 export { default as mapL } from './lazy/mapL';
 export { default as filterL } from './lazy/filterL';
+export { default as keysL } from './lazy/keysL';
+export { default as valuesL } from './lazy/valuesL';
+export { default as entriesL } from './lazy/entriesL';
+export { default as flatL } from './lazy/flatL';
+export { default as flatMapL } from './lazy/flatMapL';
+export { default as rejectL } from './lazy/rejectL';
+export { default as takeL } from './lazy/takeL';
+
+export { default as mapC } from './concurrency/mapC';
+export { default as filterC } from './concurrency/filterC';
+export { default as reduceC } from './concurrency/reduceC';
+export { default as takeC } from './concurrency/takeC';
+export { default as takeAllC } from './concurrency/takeAllC';
+export { default as catchNoop } from './concurrency/catchNoop';

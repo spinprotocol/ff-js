@@ -1,7 +1,7 @@
 import curry from "./curry";
 import isArray from "./isArray";
 import every from "./every";
-import entriesL from "./lazy/entriesLazy";
+import entriesL from "../lazy/entriesL";
 
 export default curry(function isMatch(a, b) {
     return (
