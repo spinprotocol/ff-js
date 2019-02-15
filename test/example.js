@@ -1,5 +1,5 @@
-const FF = require('../../ff-js');
-Object.assign(global, FF);
+const FF = require('../../ffp-js');
+Object.assign(global, FFP);
 
 /**
  * @description Async error handling used go & pipe + try-catch
