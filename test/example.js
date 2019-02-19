@@ -1,4 +1,4 @@
-const FF = require('../../ffp-js');
+const FFP = require('../../ffp-js');
 Object.assign(global, FFP);
 
 /**
