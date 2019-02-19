@@ -10,9 +10,7 @@ function baseMatch(targets) {
     function evl() {
         return go(
             targets,
-            tap(log),
             values,
-            tap(log),
             targets => go(cbs, find(pb => { return pb._case(...targets); }), pb => pb._body(...targets)));
     }
 
