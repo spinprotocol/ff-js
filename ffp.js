@@ -5,6 +5,7 @@ export { default as isPromise } from './base/isPromise';
 export { default as isArray } from './base/isArray';
 export { default as isFunction } from './base/isFunction';
 export { default as isString } from './base/isString';
+export { default as isEmpty } from './base/isEmpty';
 export { default as isUndefined } from './base/isUndefined';
 export { default as isMatch } from './base/isMatch';
 export { default as map } from './base/map';
@@ -27,6 +28,8 @@ export { default as every } from './base/every';
 export { default as find } from './base/find';
 export { default as last } from './base/last';
 export { default as call } from './base/call';
+export { default as toString } from './base/toString';
+export { default as join } from './base/join';
 
 export { default as mapL } from './lazy/mapL';
 export { default as filterL } from './lazy/filterL';
