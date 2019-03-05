@@ -1,8 +1,9 @@
 {
   "name": "ffp-js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Spin-protocol lib based FP for ES6+",
   "main": "index.js",
+  "module": "ffp.js",
   "directories": {
     "test": "test"
   },
