@@ -26,6 +26,8 @@ export { default as values } from './base/values';
 export { default as match } from './base/match';
 export { default as every } from './base/every';
 export { default as find } from './base/find';
+export { default as delay } from './base/delay';
+export { default as first } from './base/first';
 export { default as last } from './base/last';
 export { default as call } from './base/call';
 export { default as toString } from './base/toString';
