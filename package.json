@@ -1,9 +1,10 @@
 {
   "name": "ffp-js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Spin-protocol lib based FP for ES6+",
   "main": "index.js",
   "module": "ffp.js",
+  "sideEffects": false,
   "directories": {
     "test": "test"
   },
@@ -18,7 +19,10 @@
   "scripts": {
     "test": "mocha -R spec test/test.js",
     "local": "node ./test/example.js",
-    "local_esm": "node -r esm ./test/example.js"
+    "local_esm": "node -r esm ./test/example.js",
+    "build": "npm run build-modern && npm run build-legacy",
+    "build-modern": "webpack --config modern.config.js --env.NODE_ENV=production",
+    "build-legacy": "webpack --config legacy.config.js --env.NODE_ENV=production"
   },
   "repository": {
     "type": "git",
@@ -31,10 +35,20 @@
   },
   "homepage": "https://github.com/spinprotocol/ffp-js#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "terser-webpack-plugin": "^1.2.3",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   },
   "dependencies": {
-    "esm": "^3.2.4"
+    "core-js": "^3.0.1",
+    "esm": "^3.2.4",
+    "regenerator-runtime": "^0.13.2"
   }
 }
