@@ -32,6 +32,7 @@ export { default as last } from './base/last';
 export { default as call } from './base/call';
 export { default as toString } from './base/toString';
 export { default as join } from './base/join';
+export { default as has } from './base/has';
 
 export { default as mapL } from './lazy/mapL';
 export { default as filterL } from './lazy/filterL';
