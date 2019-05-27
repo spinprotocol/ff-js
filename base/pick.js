@@ -12,5 +12,3 @@ export default curry(function pick(ks, obj) {
   );
 });
 
-export default pick;
-
