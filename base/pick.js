@@ -1,5 +1,5 @@
-import entriesL from "./Lazy/entriesL.js";
-import filterL from "./Lazy/filterL.js";
+import entriesL from "../lazy/entriesL.js";
+import filterL from "../lazy/filterL.js";
 import merge from "./merge.js"
 import curry from "./curry.js";
 
