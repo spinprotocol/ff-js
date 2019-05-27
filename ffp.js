@@ -33,6 +33,10 @@ export { default as call } from './base/call';
 export { default as toString } from './base/toString';
 export { default as join } from './base/join';
 export { default as has } from './base/has';
+export { default as remove } from './base/remove';
+export { default as pick } from './base/pick';
+export { default as entry } from './base/entry';
+export { default as merge } from './base/merge';
 
 export { default as mapL } from './lazy/mapL';
 export { default as filterL } from './lazy/filterL';
