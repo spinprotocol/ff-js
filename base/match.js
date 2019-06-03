@@ -27,7 +27,6 @@ function baseMatch(targets) {
 
     _case.else = function() {
         _case(_=> true) (...arguments);
-        // log(targets);
         return targets ? evl() : (...targets2) => ((targets = targets2), evl());
     };
 
