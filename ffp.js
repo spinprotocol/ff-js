@@ -1,5 +1,6 @@
 export { default as log } from './base/log.js';
 
+export { default as curry } from './base/curry.js';
 export { default as isIterable } from './base/isIterable';
 export { default as isPromise } from './base/isPromise';
 export { default as isArray } from './base/isArray';
@@ -22,6 +23,7 @@ export { default as none } from './base/none';
 export { default as nop } from './base/nop';
 export { default as not } from './base/not';
 export { default as toIter } from './base/toIter';
+export { default as keys } from './base/keys';
 export { default as values } from './base/values';
 export { default as match } from './base/match';
 export { default as every } from './base/every';
@@ -40,6 +42,9 @@ export { default as entry } from './base/entry';
 export { default as merge } from './base/merge';
 export { default as identity } from './base/identity';
 export { default as wrap } from './base/wrap';
+export { default as each } from './base/each';
+export { default as split } from './base/split';
+export { default as range } from './base/range';
 
 export { default as mapL } from './lazy/mapL';
 export { default as filterL } from './lazy/filterL';
@@ -50,6 +55,9 @@ export { default as flatL } from './lazy/flatL';
 export { default as flatMapL } from './lazy/flatMapL';
 export { default as rejectL } from './lazy/rejectL';
 export { default as takeL } from './lazy/takeL';
+export { default as rangeL } from './lazy/rangeL';
+export { default as reverseL } from './lazy/reverseL';
+export { default as dropL } from './lazy/dropL';
 
 export { default as mapC } from './concurrency/mapC';
 export { default as filterC } from './concurrency/filterC';
