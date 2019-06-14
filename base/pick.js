@@ -1,14 +1,14 @@
-import entriesL from "../lazy/entriesL.js";
-import filterL from "../lazy/filterL.js";
-import merge from "./merge.js"
-import curry from "./curry.js";
+import entriesL from "../lazy/entriesL";
+import filterL from "../lazy/filterL";
+import object from "./object"
+import curry from "./curry";
 
 export default curry(function pick(ks, obj) {
   return go(
     obj,
     entriesL,
     filterL(([k]) => ks.includes(k)),
-    merge
+    object
   );
 });
 

@@ -1,8 +1,8 @@
-import go from "./go.js";
-import values from "./values.js";
-import find from "./find.js";
-import pipe from "./pipe.js";
-import isMatch from "./isMatch.js";
+import go from "./go";
+import values from "./values";
+import find from "./find";
+import pipe from "./pipe";
+import isMatch from "./isMatch";
 
 function baseMatch(targets) {
     let cbs = [];

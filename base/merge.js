@@ -1,5 +1,9 @@
-import reduce from "./reduce.js";
+import goFirst from "./goFirst";
+import reduce from "./reduce";
 
-export default function merge(iter) {
-  return reduce((obj, [k, v]) => (obj[k] = v, obj), {}, iter);
+export default function merge(ks, vs) {
+  return goFirst(
+    ks,
+    ks => reduce((acc, k) => (acc.push([k, vs[ks.indexOf(k)]]), acc), [], ks)
+  );
 }

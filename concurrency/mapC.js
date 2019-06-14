@@ -1,6 +1,6 @@
-import mapL from "../lazy/mapL.js";
-import takeAllC from "./takeAllC.js";
-import curry from "../base/curry.js";
+import mapL from "../lazy/mapL";
+import takeAllC from "./takeAllC";
+import curry from "../base/curry";
 
 export default curry(function mapC(f, iter) {
     return takeAllC(mapL(f, iter));

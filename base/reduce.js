@@ -1,7 +1,7 @@
-import toIter from "./toIter.js";
-import nop from "./nop.js";
-import goFirst from "./goFirst.js";
-import head from "./head.js";
+import toIter from "./toIter";
+import nop from "./nop";
+import goFirst from "./goFirst";
+import head from "./head";
 
 const call2 = (acc, a, f) =>
   a instanceof Promise ?

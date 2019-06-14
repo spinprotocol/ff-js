@@ -1,5 +1,5 @@
-import curry from "../base/curry.js";
-import filterL from "./filterL.js";
+import curry from "../base/curry";
+import filterL from "./filterL";
 
 export default curry(function dropL(l, iter) {
   let i = 0;
