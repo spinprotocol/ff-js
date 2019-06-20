@@ -1,6 +1,6 @@
 {
   "name": "ffp-js",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Spin-protocol lib based FP for ES6+",
   "main": "index.js",
   "module": "ffp.js",
@@ -47,8 +47,6 @@
     "webpack-cli": "^3.3.1"
   },
   "dependencies": {
-    "core-js": "^3.0.1",
-    "esm": "^3.2.4",
-    "regenerator-runtime": "^0.13.2"
+    "esm": "^3.2.4"
   }
 }
